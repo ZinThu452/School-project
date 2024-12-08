@@ -1,0 +1,120 @@
+/* Reset some default styles */
+body, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #2d2e30;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#skills {
+    margin-top: 100px;
+    padding: 30px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: white;
+    border: 2px solid #3b6a9d;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card i {
+    color: #3b6a9d;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.skill-card:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #2d2e30;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skill-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

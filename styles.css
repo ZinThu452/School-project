@@ -1,0 +1,530 @@
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;  /* Applying Poppins font */
+}
+
+body {
+    background-color: #f0f0f0;  /* Light gray background */
+    color: #333;  /* Dark text color for good readability */
+    line-height: 1.6;
+    padding: 20px;
+    box-shadow: inset 0 0 50px rgba(169, 169, 169, 0.3);  /* Light gray shadow effect */
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+/* Header Section */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Full-Screen Header Styles */
+.full-screen-header {
+    height: 100vh;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+/* Header Content */
+.header-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text Content */
+.text-content h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .text-content h1 {
+        font-size: 36px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+    }
+}
+
+/* Profile Section */
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #0f4072;  /* Blue color for the title */
+    margin-bottom: 15px;
+}
+
+.profile-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .profile-title {
+        font-size: 2rem;
+    }
+
+    .profile-description {
+        font-size: 1rem;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+/* About Me Section */
+#about {
+    background-color: #f9f9f9;  /* Light gray background */
+    padding: 50px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;  /* To position the shadow line */
+}
+
+/* Left Side: Image */
+.about-image {
+    flex: 1;  /* Take up equal space */
+    max-width: 400px;  /* Limit image width */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  /* Subtle shadow around the image */
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+/* Right Side: Text */
+.about-text {
+    flex: 1;  /* Take up equal space */
+    text-align: left;
+    z-index: 2;  /* Place above the shadow line */
+}
+
+.about-text h2 {
+    margin-bottom: 100px;
+    font-size: 2.5rem;
+    color: #1E90FF;  /* Blue title */
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;  /* Stack image and text vertically */
+        gap: 30px;
+    }
+
+    .shadow-line {
+        display: none;  /* Hide the line on small screens */
+    }
+
+    .about-image {
+        max-width: 100%;  /* Full width for smaller screens */
+    }
+
+    .about-text {
+        text-align: center;  /* Center-align text on smaller screens */
+    }
+}
+
+/* Navigation Menu Positioned Right */
+.nav-right {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.nav-right ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between items */
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-right ul li a:hover {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Vertical Navigation (Right-Side Buttons) */
+.vertical-nav {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.vertical-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px;
+}
+
+.vertical-nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1E90FF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-nav ul li a:hover {
+    background-color: #0066cc;
+    transform: translateX(-5px); /* Slight left movement on hover */
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Horizontal Navigation */
+.horizontal-nav {
+    text-align: right; /* Align navigation to the right */
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.horizontal-nav ul {
+    list-style: none;
+    display: inline-flex; /* Horizontal layout for items */
+    gap: 20px; /* Space between buttons */
+}
+
+.horizontal-nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.horizontal-nav ul li a:hover {
+    color: #1E90FF; /* Change text color on hover */
+    border-bottom: 2px solid #1E90FF; /* Add underline effect */
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1E90FF;
+}
+
+#contact p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Contact Form */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1E90FF;
+    outline: none;
+}
+
+button {
+    background-color: #1E90FF;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1c7ed6;
+}
+
+
+
+/* Footer Section */
+footer {
+    background-color: #514d4d;  /* Black background for the footer */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .work-container, .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-card, .skill-card {
+        width: 80%;
+    }
+}
+
+
+/* Default Button Style */
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #1E90FF; /* Blue background */
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #0066cc; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Specific Styling for Learn More Button */
+.learn-more-btn {
+    background-color: #4CAF50; /* Green button for Learn More */
+    border: 2px solid #4CAF50; /* Green border */
+    color: #fff; /* White text color */
+}
+
+.learn-more-btn:hover {
+    background-color: #45a049; /* Slightly darker green */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
