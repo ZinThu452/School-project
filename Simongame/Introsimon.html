@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game Introduction</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #4CAF50, #008CBA);
+            color: white;
+            text-align: center;
+        }
+        header {
+            margin: 20px 0;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .images img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #FF5722;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #E64A19;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Simon Game</h1>
+        <p>Simon Game is a fun memory challenge where you follow the light patterns and repeat them! Test your memory and improve your focus with this classic game.</p>
+    </header>
+
+    <div class="images">
+        <img src="Simon1.avif" alt="Simon Game Image 1">
+        <img src="Simon5.png" alt="Simon Game Image 2">
+        <img src="simon4.webp" alt="Simon Game Image 3">
+        <img src="Simon2.png" alt="Simon Game Image 4">
+        <img src="simon3.jpg" alt="Simon Game Image 5">
+    </div>
+
+    <div class="button-container">
+        <button onclick="navigateToGame()">Play the Game</button>
+    </div>
+
+    <script>
+        function navigateToGame() {
+            window.location.href = 'simon.html'; // Replace with your actual game page URL
+        }
+    </script>
+</body>
+</html>
